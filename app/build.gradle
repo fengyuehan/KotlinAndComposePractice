@@ -38,7 +38,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.1.1'
+        kotlinCompilerExtensionVersion '1.1.1'  //这个的版本号需要跟org.jetbrains.kotlin:kotlin-stdlib:1.6.10的版本对应上，不然会报错
     }
     packagingOptions {
         resources {
