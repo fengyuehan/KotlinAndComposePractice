@@ -1,18 +1,18 @@
-package com.example.kotlinandcompose
+package com.example.kotlinandcompose.Flow
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.kotlinandcompose.Flow.FlowActivity
+import com.example.kotlinandcompose.MainAdapter
+import com.example.kotlinandcompose.MainBean
+import com.example.kotlinandcompose.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var mAdapter:MainAdapter
-
+class StateFlowActivity:AppCompatActivity() {
+    private lateinit var mAdapter: MainAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_state_flow)
         initView()
         initData()
         initListener()
@@ -23,9 +23,15 @@ class MainActivity : AppCompatActivity() {
             val bean = adapter.data[position] as MainBean
             when(bean.id){
                 1 -> {
-                    startActivity(Intent(this,FlowActivity::class.java))
+
                 }
                 2 ->{
+
+                }
+                3 ->{
+
+                }
+                4 ->{
 
                 }
             }
@@ -34,8 +40,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun initData() {
         val mData = ArrayList<MainBean>()
-        mData.add(MainBean("Flow的使用",1))
-        mData.add(MainBean("StateFlow和 SharedFlow的使用",2))
+        mData.add(MainBean("Flow的使用创建",1))
+        mData.add(MainBean("FlowOn的使用创建",2))
+        mData.add(MainBean("过度操作符",3))
+        mData.add(MainBean("zip与combine的区别",4))
         mAdapter.setList(mData)
     }
 
