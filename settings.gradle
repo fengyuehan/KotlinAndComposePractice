@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "KotlinAndCompose"
 include ':app'
 include ':MVIDemo'
+include ':coroutinedemo'
