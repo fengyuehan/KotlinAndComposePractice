@@ -26,6 +26,7 @@
                 android:value="" />
         </activity>
         <activity android:name=".Flow.FlowActivity" />
+        <activity android:name=".Flow.StateFlowActivity"/>
     </application>
 
 </manifest>

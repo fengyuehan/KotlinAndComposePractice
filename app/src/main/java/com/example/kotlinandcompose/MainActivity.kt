@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kotlinandcompose.Flow.FlowActivity
+import com.example.kotlinandcompose.Flow.StateFlowActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(Intent(this,FlowActivity::class.java))
                 }
                 2 ->{
-
+                    startActivity(Intent(this,StateFlowActivity::class.java))
                 }
             }
         }
