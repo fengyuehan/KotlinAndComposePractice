@@ -18,3 +18,4 @@ rootProject.name = "KotlinAndCompose"
 include ':app'
 include ':MVIDemo'
 include ':coroutinedemo'
+include ':Composepractice'
